@@ -4,11 +4,11 @@ international = "t"
 
 name = input("Sender Name: ")
 type = input("Type of Item: ")
-is_Fragile = input("Is is Fragile? (t/f): ")
+is_Fragile = bool(input("Is is Fragile? (t/f): "))
 weight = float(input("Enter weight{kg}: "))
 distance = float(input("Enter distance{km}: "))
-is_express = input("Is it Express? (t/f): ")
-is_international = input("Is it International? (t/f): ")
+is_express = bool(input("Is it Express? (t/f): "))
+is_international = bool(input("Is it International? (t/f): "))
 
 #Calculate Base Cost
 base_cost = (weight * 2.50) + (distance * 0.15)
